@@ -1,0 +1,18 @@
+--- scim-canna-1.0.1/src/Makefile.am.orig	2006-02-07 03:28:46.000000000 +0100
++++ scim-canna-1.0.1/src/Makefile.am	2016-04-08 21:18:47.147697627 +0200
+@@ -26,7 +26,6 @@
+ 
+ canna_la_LDFLAGS = \
+ 	-avoid-version \
+-	-rpath $(moduledir) \
+ 	-module \
+ 	@LIBTOOL_EXPORT_OPTIONS@ \
+ 	@SCIM_LIBS@ \
+@@ -46,7 +45,6 @@
+ canna_imengine_setup_la_CXXFLAGS= @SCIM_GTKUTILS_CFLAGS@ @SCIM_CFLAGS@ @SCIM_DEBUG_FLAGS@
+ 
+ canna_imengine_setup_la_LDFLAGS = -avoid-version \
+-                                   -rpath $(setupmoduledir) \
+                                    -module \
+                                    @LIBTOOL_EXPORT_OPTIONS@ \
+                                    @SCIM_GTKUTILS_LIBS@ \
